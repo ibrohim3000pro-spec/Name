@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial;
+    background: #0b1020;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #111a31;
+}
+
+header h1 {
+    color: #55baff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #55baff;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 8%;
+    gap: 40px;
+    background: #172b4d;
+}
+
+.main-text {
+    max-width: 550px;
+}
+
+.blue {
+    color: #55baff;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 15px 0 20px;
+}
+
+p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.main img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #55baff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #2589df;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.about img {
+    width: 230px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #17233d;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #55baff;
+    margin: 15px 0;
+}
+
+#goals {
+    background: #111a31;
+}
+
+li {
+    margin: 15px 0;
+    color: #cbd5e1;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #080d19;
+}
+
+@media (max-width: 700px) {
+
+    .main,
+    .about,
+    .cards {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
